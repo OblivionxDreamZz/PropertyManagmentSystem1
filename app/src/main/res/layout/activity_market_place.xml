@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/market1"
+                     />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="46dp"
+                    android:text="Market Place"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="56dp"
+                     />
+
+
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:src="@drawable/back"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                     />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/image1" />
+
+
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/image2" />
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/image1" />
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="left"
+                                android:text="Best Sellers"
+                                android:textColor="#322e47"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="right"
+                                android:text="Top Of The Range "
+                                android:textColor="#308fe9"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:id="@+id/button1"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/couch11" />
+
+                            <ImageView
+                                android:id="@+id/button2"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/couches2"
+                                />
+
+                            <ImageView
+                                android:id="@+id/button3"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/couch3"
+                                 />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:id="@+id/button4"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/bed1"
+                                 />
+
+                            <ImageView
+                                android:id="@+id/button5"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/bed2"
+                                 />
+
+                            <ImageView
+                                android:id="@+id/button6"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/bed3"
+                                 />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:id="@+id/button7"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/table1"
+                                 />
+
+                            <ImageView
+                                android:id="@+id/button8"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/table2"
+                                 />
+
+                            <ImageView
+                                android:id="@+id/button9"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="33.3"
+                                android:src="@drawable/table3"
+                                 />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8sp"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="150dp"
+                                android:layout_marginRight="4dp"
+                                android:src="@drawable/image2" />
+
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="150dp"
+                                android:layout_marginRight="4dp"
+                                android:src="@drawable/image1" />
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

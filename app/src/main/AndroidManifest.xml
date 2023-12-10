@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.propertymanagmentsystem">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/viewproperties"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PropertyManagmentSystem"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ViewPDF3"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPDF2"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPDF1"
+            android:exported="false" />
+        <activity
+            android:name=".ViewApprovedMaintenance"
+            android:exported="false" />
+        <activity
+            android:name=".MaintenanceProcessing"
+            android:exported="false" />
+        <activity
+            android:name=".ReadData2"
+            android:exported="false" />
+        <activity
+            android:name=".ReadData"
+            android:exported="false" />
+        <activity
+            android:name=".propertyItem9"
+            android:exported="false" />
+        <activity
+            android:name=".propertyItem8"
+            android:exported="false" />
+        <activity
+            android:name=".propertyItem7"
+            android:exported="false" />
+        <activity
+            android:name=".propertyItem6"
+            android:exported="false" />
+        <activity
+            android:name=".propertyItem5"
+            android:exported="false" />
+        <activity
+            android:name=".propertyItem4"
+            android:exported="false" />
+        <activity
+            android:name=".propertyItem3"
+            android:exported="false" />
+        <activity
+            android:name=".propertyItem2"
+            android:exported="false"
+            android:label="@string/title_activity_property_item2"
+            android:theme="@style/Theme.PropertyManagmentSystem" />
+        <activity
+            android:name=".propertyItem1"
+            android:exported="false" />
+        <activity
+            android:name=".product1"
+            android:exported="false"
+            android:label="@string/title_activity_product1"
+            android:theme="@style/Theme.PropertyManagmentSystem" />
+        <activity
+            android:name=".MarketPlace"
+            android:exported="false" />
+        <activity
+            android:name=".StripePayment"
+            android:exported="false" />
+        <activity
+            android:name=".ContactClient"
+            android:exported="false" />
+        <activity
+            android:name=".ViewClients"
+            android:exported="false" />
+        <activity
+            android:name=".PropertyScreeningSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".PropertyScreening"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMaintenance"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationScreen2"
+            android:exported="false" />
+        <activity
+            android:name=".TenantRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".TenantLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MaintenanceSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".TenantDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MaintenanceReporting"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ViewProperty2"
+            android:exported="false" />
+        <activity
+            android:name=".ViewManager"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProperties2"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProperties"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewProperty"
+            android:exported="false" />
+        <activity android:name=".model" />
+        <activity android:name=".items" />
+        <activity
+            android:name=".addProperty"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".AddNew_Property" />
+        <activity android:name=".ManagementDashboard" />
+        <activity android:name=".VerificationScreen" />
+        <activity android:name=".managementRegistration" />
+        <activity android:name=".ManagementLoginForm" />
+        <activity android:name=".TenantControl" />
+        <activity android:name=".PropertyManagerControl" />
+        <activity android:name=".usercontrol" />
+        <activity android:name=".LandingPage" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
