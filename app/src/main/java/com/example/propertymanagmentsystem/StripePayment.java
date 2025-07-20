@@ -29,15 +29,16 @@ public class StripePayment extends AppCompatActivity {
 
     Button mPay;
 
-    String SECRET_KEY = "sk_test_51O8dOZJ9nvNqi0CJULKvaioqPHvaRuzq998L4DNAnGl34u1nKvD8B10T73IHqmfzeqK6642hoQj4UhhL83Ni1rIm00shZu0wQJ";
-    String PUBLISH_KEY = "pk_test_51O8dOZJ9nvNqi0CJ4h15jmQTb025YlYxiDgR0ukeb17nFYGHQchDbWJcEIdHhi30yEdyT7DHDM3Pjtv9iPz1zT43000968k1eG";
+    //String SECRET_KEY = "Add Your Secrect Key Here";
+    //String PUBLISH_KEY = "Add Your Public Key Here";
     PaymentSheet paymentSheet;
     String customerID = "cus_OxE4pN1mFGcxGf";
     String EphericalKey = "ephkey_1O9JfyJ9nvNqi0CJ2Z2gOYGC";
     String ClientSecret = "pi_3O9Jh6J9nvNqi0CJ0ZGdYbY0_secret_SOn6fkEEFtW5GD0vxFkFzRTb6";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) 
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stripe_payment);
 
